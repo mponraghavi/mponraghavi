@@ -16,11 +16,12 @@ import com.supermarket.checkout.data.SuperMarketData;
 public class SuperMarketCheckoutApplication {
 
 	public static void main(String[] args) {
+		SpringApplication.run(SuperMarketCheckoutApplication.class, args);
 	    Map<String, Integer> checkoutItems = new HashMap<>();
         checkoutItems.put("D", 1);
         checkoutItems.put("A", 1);
         System.out.println(getTotalPrice(checkoutItems));
-		SpringApplication.run(SuperMarketCheckoutApplication.class, args);
+		
 	}
 	
 
